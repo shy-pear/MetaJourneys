@@ -1,0 +1,10 @@
+metric,period,value,unit,type,source_url
+Family daily active people (DAP),2026-03,3.56,billion,MEASURED,https://investor.atmeta.com/investor-news/
+Family DAP YoY growth,2026-Q1,4,percent,MEASURED,https://investor.atmeta.com/investor-news/
+Family average revenue per person (ARPP),2026-Q1,15.66,USD per quarter,MEASURED,https://investor.atmeta.com/investor-news/
+Family average revenue per person (ARPP),2025-Q1,12.36,USD per quarter,MEASURED,https://investor.atmeta.com/investor-news/
+Family ARPP YoY growth,2026-Q1,27,percent,DERIVED,https://investor.atmeta.com/investor-news/
+Total revenue,2026-Q1,56.3,USD billion,MEASURED,https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html
+Family of Apps revenue,2026-Q1,55.91,USD billion,MEASURED,https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html
+Ad impressions YoY growth,2026-Q1,19,percent,MEASURED,https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html
+Average price per ad YoY growth,2026-Q1,12,percent,MEASURED,https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html

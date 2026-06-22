@@ -1,0 +1,9 @@
+benchmark,value,unit,context,type,source_url
+Content creators (90-9-1 rule),1,percent,"Classic participation-inequality: ~1% of an online community actively create content, 9% contribute occasionally, 90% lurk (Nielsen / NN-g).",MEASURED,https://www.nngroup.com/articles/participation-inequality/
+Active creators (modern estimate),23,percent,"Newer research finds the creating share has risen to as much as ~23% on some social platforms vs the classic 1%.",MEASURED,https://www.higherlogic.com/blog/90-9-1-rule-online-community-engagement-data/
+App abandonment by 3 months,70,percent,"Over 70% of all app users abandon an app within three months of install.",MEASURED,https://www.businessofapps.com/data/strava-statistics/
+Fitness app 30-day retention,10,percent,"Fitness apps average ~8-12% retention at 30 days (midpoint ~10%).",MEASURED,https://www.lucid.now/blog/retention-metrics-for-fitness-apps-industry-insights/
+Fitness app 90-day retention,31,percent,"Average 90-day retention for fitness apps is ~31%.",MEASURED,https://www.lucid.now/blog/retention-metrics-for-fitness-apps-industry-insights/
+Fitness app annual retention,19,percent,"Average annual retention for fitness apps is ~19%.",MEASURED,https://www.lucid.now/blog/retention-metrics-for-fitness-apps-industry-insights/
+Strava 30-day retention (iOS),16,percent,"Strava's 30-day retention is ~16% on iOS, 8% on Android.",MEASURED,https://www.businessofapps.com/data/strava-statistics/
+Strava 90-day retention after Challenges,32,percent,"Strava's gamified Challenges feature lifted 90-day retention from 18% to 32% - the closest analog to Journeys' completion summaries and follow-along hooks.",MEASURED,https://strivecloud.io/blog/app-gamification/app-engagement-strava/

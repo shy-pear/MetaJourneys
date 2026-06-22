@@ -1,0 +1,22 @@
+# All values here are MODELED assumptions, editable without touching code.
+# They seed the Module 5 adoption & revenue model and the synthesis verdict.
+
+model:
+  ig_mau_base_millions: 2400   # MEASURED-with-caveat base, businesstats 2026 (see SOURCES.md #1)
+  adoption_pct: 8.0            # % of IG MAU who start a Journey in year 1
+  repeat_poster_pct: 40.0     # % of starters who post repeatedly; starters are self-selected creators, so above the ~23% population creator-rate (90-9-1)
+  retention_pct: 32.0         # % of active creators retained after ramp; anchored to Strava-with-Challenges 90-day (32%)
+  incremental_arpu_usd: 1.00  # incremental annual ad ARPU per engaged person (~1.6% of Meta's ~$62/yr Family ARPP)
+  followers_per_journey: 25   # avg opt-in "follow along" audience per active Journey
+
+# Slider ranges shown in the UI (min, max, step)
+ranges:
+  adoption_pct: [1.0, 25.0, 0.5]
+  repeat_poster_pct: [10.0, 80.0, 1.0]
+  retention_pct: [10.0, 70.0, 1.0]
+  incremental_arpu_usd: [0.0, 3.0, 0.05]
+
+# Verdict thresholds on modeled incremental annual revenue (USD billions)
+verdict:
+  go_above_usd_bn: 2.0
+  refine_above_usd_bn: 0.5

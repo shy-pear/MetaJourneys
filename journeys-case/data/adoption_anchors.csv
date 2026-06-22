@@ -1,0 +1,7 @@
+product,months_since_launch,metric,value_millions,type,source_url
+Instagram Stories,5,Daily active users,200,MEASURED,https://techcrunch.com/2017/04/13/instagram-stories-200m/
+Instagram Stories,12,Daily active users,250,MEASURED,https://techcrunch.com/2017/08/02/instagram-stories-and-whatsapp-status-hit-250m-daily-users/
+Instagram Stories,16,Daily active users,300,MEASURED,https://techcrunch.com/2017/11/01/instagram-stories-and-whatsapp-status-reach-300m-users/
+Instagram Stories,24,Daily active users,400,MEASURED,https://techcrunch.com/2018/06/20/instagram-stories-400-million/
+Instagram Stories,29,Daily active users,500,MEASURED,https://techcrunch.com/2019/01/30/instagram-stories-500-million/
+Threads,0,Signups (first 5 days),100,MEASURED,https://about.fb.com/news/2023/07/introducing-threads-new-app-text-sharing/
