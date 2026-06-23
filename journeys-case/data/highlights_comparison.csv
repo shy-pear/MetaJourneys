@@ -1,0 +1,16 @@
+capability,category,highlights,journeys,edge,type
+Group content by theme,Structure,Yes,Yes,parity,MEASURED
+Simplicity / zero learning curve,Structure,Yes,No,highlights,DERIVED
+"Off-grid, low-pressure posting",Structure,Yes,Yes,parity,MEASURED
+Installed base / familiarity,Structure,Yes,No,highlights,DERIVED
+Goal or theme with direction,Structure,No,Yes,journeys,DERIVED
+Timeline & stage,Structure,No,Yes,journeys,DERIVED
+Celebrated completion (recap),Structure,No,Yes,journeys,DERIVED
+Likes on individual posts,Social,No,Yes,journeys,MEASURED
+Public comment threads,Social,No,Yes,journeys,MEASURED
+Visible aggregate engagement,Social,No,Yes,journeys,DERIVED
+Follow-along without following the creator,Social,No,Yes,journeys,DERIVED
+Updates distributed in the feed,Distribution,No,Yes,journeys,DERIVED
+Resurfacing of popular collections,Distribution,No,Yes,journeys,DERIVED
+Discoverable on Explore,Discovery,No,Yes,journeys,DERIVED
+Meta AI "what's next" guidance,Guidance,No,Yes,journeys,DERIVED

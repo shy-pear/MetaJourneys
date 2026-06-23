@@ -29,6 +29,28 @@ user-provided access.
   participation inequality, fitness-app retention (Lucid.now, Business of Apps), and Strava's
   gamified-Challenges retention lift (StriveCloud). Used to ground the Module 5 funnel
   assumptions (repeat-posting and retention) in real analog behavior.
+- **Meta AI usage & intent evidence** (`meta_ai_comparison.csv`, `intent_evidence.csv`) —
+  Meta AI scale and the ~4% daily/monthly ratio (Presenc, DemandSage); Google "micro-moments"
+  high-intent demand (Think with Google via SEO Inc / Ptengine); personalization & product-
+  recommendation conversion stats (Instapage, Clerk.io); plus the behavioral *fresh-start
+  effect* and *implementation-intentions* literature (The Behavioral Scientist; NIH/PMC).
+  Used in the "Meta AI deep-dive" feature tab.
+- **Instagram Highlights** (`highlights_facts.csv`, `highlights_comparison.csv`,
+  `highlights_strategy_phases.csv`) — Highlights launch and purpose (Instagram newsroom, Dec
+  2017; TechCrunch); business/influencer adoption of Highlights (Social Tradia, inBeat). The
+  capability comparison and phased Highlights→Journeys strategy are DERIVED/MODELED product
+  analysis. General-user Highlights adoption is FLAGGED (not disclosed by Meta). Newer
+  Highlights signals also feed the Product Case: set-and-forget **abandonment** (Hollyland —
+  Instagram deletes neglected Highlights), Instagram **demoting** Highlights off the profile
+  in 2024–25 (PiunikaWeb), and Instagram **engagement down ~26% YoY** (eMarketer). These refine
+  the retention caution (Module 5 / The Case), add a tailwind + headwind (Module 4), and scope
+  the demand claim (Overview, Module 2) — see notes below.
+- **WhatsApp integration** (`whatsapp_usage.csv`, `whatsapp_accountability.csv`,
+  `whatsapp_assessment.csv`) — WhatsApp scale, stickiness, group-chat share and US/India
+  penetration (DemandSage, Infobip, WANotifier, Sinch, 2025–26); goal-accountability research
+  (ASTD via Fast Company; group-goal studies via C'Meet It / Dataquest); and the Gollwitzer
+  "announcing goals backfires" research (MIT Sloan Management Review). Help/hinder reads tagged
+  DERIVED.
 
 ## DATA-STATUS / NEEDS-INPUT (not freely public — flagged per the brief)
 1. **Instagram-only MAU by quarter.** Meta no longer breaks Instagram out in its filings.
@@ -48,3 +70,18 @@ user-provided access.
 ## Modeled assumptions
 - `config/assumptions.yaml` holds all Module 5 sliders and the Journeys scorecard. Every value
   there is MODELED and user-adjustable in the app.
+- `data/rollout_roadmap.json` holds the phased rollout plan shown in the **Rollout roadmap**
+  tab (7 phases, 0–6, plus the cross-cutting marketing track). It is a MODELED product strategy
+  (phases, gates, go/adjust/kill decisions) derived from the project's rollout roadmap — not
+  external public data.
+- `data/marketing_plan.json` holds the **Launch marketing** tab content (positioning, pillars,
+  the "Everyone Starts at Day One" campaign, beachhead waves, Founding Journeys program,
+  channels, sequence, measurement, risks). MODELED marketing strategy from the launch marketing
+  plan — not external public data.
+- `data/npv_model.json` holds the **NPV analysis** tab (7-year DCF, phase costs, scenarios),
+  ported from `meta-journeys-npv.xlsx`. ILLUSTRATIVE / MODELED — Meta's internal costs are not
+  public. Updated vs the source: Instagram MAU 2.0B → 2.4B (latest, consistent with the
+  Adoption & revenue model); NPV is independent of the MAU base, so headline outputs reproduce
+  the workbook exactly (NPV ≈ $7.6B, B/C ≈ 8.3×). The mature ARPU is cross-checked against
+  Meta's real Family ARPP (~$63/yr, derived from Q1 2026 ARPP $15.66/qtr in
+  `meta_performance.csv`).

@@ -96,9 +96,11 @@ def render():
         f"win ~{emb_y:.0f}% of the time vs ~{emb_n:.0f}% when standalone; graph-leveraged "
         f"launches win ~{gr_y:.0f}% vs ~{gr_n:.0f}% without. **Porting a proven behavior** is "
         "near-universal in Meta's portfolio (almost every launch is a fast-follow) — so it is "
-        "necessary table-stakes but does not, on its own, separate winners from losers. Note the "
-        "honest counter-example: Facebook Live Shopping had all three traits yet was killed, so "
-        "the traits raise the odds rather than guarantee success.")
+        "necessary table-stakes but does not, on its own, separate winners from losers. Two "
+        "honest counter-examples carry all three traits yet did not cleanly win: Facebook Live "
+        "Shopping (killed) and Instagram Highlights — which won adoption but stalled as a static "
+        "archive Meta is now demoting. The traits raise the odds; they do not guarantee a win "
+        "without an engine behind them.")
 
     # --- Scored table -------------------------------------------------------
     st.subheader("4. Full scored launch table")
@@ -120,4 +122,7 @@ def render():
         "sufficient; the traits that actually predict wins are <b>embedding in a high-traffic "
         "surface</b> and <b>leveraging the existing social graph</b>. This becomes the rubric for "
         "scoring Journeys in Module 2 — and Journeys is designed to score maximally on exactly "
-        "the two traits that matter most.")
+        "the two traits that matter most. The closest precedent is Instagram Highlights: it "
+        "cleared the trait bar yet plateaued as a static archive with no engine behind it (no "
+        "progression, social layer, distribution, or discovery) — precisely the gap Journeys is "
+        "built to fill (see the Highlights deep-dive tab).")

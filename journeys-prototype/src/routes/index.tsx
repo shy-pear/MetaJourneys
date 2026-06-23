@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { useState } from "react";
 import { PhoneFrame } from "../components/PhoneFrame";
 import { TopBar } from "../components/TopBar";
 import { BottomTabs } from "../components/BottomTabs";
@@ -7,6 +8,7 @@ import { FriendPostCard } from "../components/PostCard";
 import { RampUpCard } from "../components/RampUpCard";
 import { JourneyPostCard } from "../components/JourneyPostCard";
 import { useApp } from "../state/AppState";
+import { StoryViewer } from "../components/StoryViewer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -21,7 +23,10 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const navigate = useNavigate();
   const { journeys, rampUpDismissed, isFollowing, isOwned, getJourney } = useApp();
+  const [viewingYourStories, setViewingYourStories] = useState(false);
+
   // Feed should never show the current user's own journeys — only others'.
   const sourdough = getJourney("sourdough");
   const asia = getJourney("asia");
@@ -32,7 +37,7 @@ function Index() {
     <PhoneFrame>
       <TopBar />
       <main className="flex-1 overflow-y-auto">
-        <StoriesRow />
+        <StoriesRow onOpenYourStories={() => setViewingYourStories(true)} />
         <FriendPostCard />
         {sourdough && !isOwned(sourdough.id) ? (
           rampUpDismissed || isFollowing("sourdough") ? (
@@ -49,6 +54,15 @@ function Index() {
         ))}
       </main>
       <BottomTabs />
+
+      {viewingYourStories && (
+        <StoryViewer 
+          onClose={() => setViewingYourStories(false)}
+          onNavigateToJourney={(journeyId) => {
+            navigate({ to: `/journey/${journeyId}` });
+          }}
+        />
+      )}
     </PhoneFrame>
   );
 }

@@ -35,7 +35,7 @@ function PostedPage() {
           <Sparkles className="h-4 w-4" /> Need more inspiration?
         </button>
         <button
-          onClick={() => navigate({ to: "/journey/$id", params: { id } })}
+          onClick={() => navigate({ to: `/journey/${id}` })}
           className="mt-4 text-sm font-semibold text-neutral-700"
         >
           Back to journey

@@ -47,14 +47,15 @@ def render():
 
     base = st.number_input(
         "Instagram MAU base (millions) — MEASURED-with-caveat (see 📄 Sources)",
-        value=float(m["ig_mau_base_millions"]), step=100.0,
+        value=float(m["ig_mau_base_millions"]), step=100.0, key="m5_base",
         help="Default 2,400M = businesstats.com 2026 estimate. Public estimates range "
              "~2,000M (Backlinko) to 3,000M (Meta CEO, Sept 2025). Edit to stress-test.")
 
     def _slider(label, key, default, help=None):
         lo, hi, step = rng[key]
+        # explicit key so slider values persist across Product Case section switches
         return st.slider(label, min_value=float(lo), max_value=float(hi), step=float(step),
-                         value=float(default), help=help)
+                         value=float(default), help=help, key=f"m5_{key}")
 
     c1, c2 = st.columns(2)
     with c1:
@@ -113,7 +114,11 @@ def render():
             "lifted 90-day retention from 18% to 32% — evidence that completion summaries and "
             "follow-along social reward, which Journeys is built around, materially improve "
             "sustained creation. The 32% default assumes Journeys achieves Strava-with-Challenges "
-            "level retention; drop it toward ~19% for a no-engagement-lift scenario.")
+            "level retention; drop it toward ~19% for a no-engagement-lift scenario. **A sober "
+            "in-Meta signal:** even low-effort Instagram Highlights are widely set-and-forget "
+            "(Instagram deletes neglected ones) — direct evidence that a progress-collection "
+            "habit decays without an engine, so the conservative end of this range is the prudent "
+            "planning case and retention remains the single biggest thing a beta must measure.")
 
     # --- Revenue ------------------------------------------------------------
     st.subheader("2. Modeled incremental annual revenue")

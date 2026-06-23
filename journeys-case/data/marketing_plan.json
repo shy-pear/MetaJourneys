@@ -1,0 +1,71 @@
+{
+  "challenge": {
+    "objective": "Make starting a Journey feel desirable and safe for a normal user — pull them off the comfortable Highlights/Stories default and get them to publicly document something unfinished. Reach is the easy part when you own Instagram.",
+    "truths": [
+      {"title": "The enemy is a default, not a competitor", "emoji": "🛋️", "text": "People already document progress through Stories and group it in Highlights. Marketing has to reframe that habit as the first rung of something better — not fight it."},
+      {"title": "The barrier is emotional, not functional", "emoji": "😬", "text": "Posting ‘day one, I’m bad at this’ cuts against Instagram’s curated, aspirational culture. The central job is to make beginning — visibly, imperfectly — feel brave and aspirational rather than embarrassing."}
+    ]
+  },
+  "positioning": {
+    "one_liner": "Stories show what’s happening today. Your profile shows who you are. Journeys show who you’re becoming.",
+    "promise": "Get recognized for what you’re working toward — not just what you’ve already achieved. Journeys turns your progress into something people can follow, cheer, and find.",
+    "wont_say": "“A better way to group your content by theme.” That framing loses to Highlights on simplicity and misses the point. We sell distribution, progress, guidance, and being seen — never organization."
+  },
+  "pillars": [
+    {"name": "Progress, not perfection", "emoji": "🌱", "truth": "Your grid is your highlight reel; your Journey is the real story.", "motivation": "Speaks to authenticity-fatigue and removes the curation-anxiety barrier."},
+    {"name": "You don’t have to figure it out alone", "emoji": "🧭", "truth": "Meta AI helps you find the next step — creators, communities, the right gear, what to do at your stage.", "motivation": "Speaks to the inspiration-to-action problem that sends people off-platform."},
+    {"name": "Someone’s rooting for you", "emoji": "🎉", "truth": "Followers can follow along, cheer each update, and celebrate the finish.", "motivation": "Speaks to social motivation and accountability — the thing that makes progress stick."}
+  ],
+  "hero": {
+    "name": "Everyone Starts at Day One",
+    "cta": "Start your Day One",
+    "concept": "Pair people’s polished, impressive ‘now’ with their humble, awkward beginning. The truth it lands: everything impressive started somewhere unglamorous — and that somewhere is worth sharing.",
+    "why": "It reframes the exact thing people fear (posting imperfect beginnings) as the most relatable, aspirational, human thing they can do — and implicitly contrasts a living Journey against the static, perfected grid. It’s endlessly extensible across every category.",
+    "personas": [
+      {"who": "The Marathoner", "emoji": "🏃", "day_one": "Couldn’t run a single mile without stopping to walk.", "now": "Crossing the finish line at mile 26.2."},
+      {"who": "The Photographer", "emoji": "📷", "day_one": "A blurry, badly-lit first photo.", "now": "A gallery-worthy shot people stop to look at."},
+      {"who": "The Founder", "emoji": "🚀", "day_one": "A messy first prototype held together with tape.", "now": "A real product, launched."},
+      {"who": "The New Parent", "emoji": "🍼", "day_one": "An overwhelmed, sleepless first week.", "now": "Confident, and finding the rhythm."},
+      {"who": "The Language Learner", "emoji": "🗣️", "day_one": "Fumbling through five words of a new language.", "now": "Holding a real conversation."}
+    ]
+  },
+  "waves": [
+    {"wave": "Wave 1", "theme": "High-accountability, clear milestones, already share publicly", "categories": ["Marathon / running", "Fitness transformations", "Sobriety", "Language learning"]},
+    {"wave": "Wave 2", "theme": "Strong creator ecosystems, skill-based", "categories": ["Golf & skill sports", "Photography", "Cooking", "Music", "Entrepreneurship"]},
+    {"wave": "Wave 3", "theme": "High-emotion, high-ARPU life documentation", "categories": ["Travel", "Parenting", "Weddings", "Home renovation"]}
+  ],
+  "founding": {
+    "what": "Recruit a curated cohort of creators across every beachhead category to begin a real Journey publicly, from scratch, at launch — documented honestly, day one included. Their Journeys become the reference for ‘what good looks like’ and the first thing new users see.",
+    "ask": "Not an ad read — genuine participation: start a real Journey, post on your real cadence, and invite your audience to follow along. Authenticity is the asset; a polished sponsored post would undercut the whole ‘progress not perfection’ message.",
+    "incentive": "Amplification. Instagram actively pushes Founding Journeys to interest-matched audiences beyond the creator’s own followers — costs nothing Meta isn’t already doing, is a stronger pull than a flat fee, self-selects for consistent posters, and directly seeds the discovery the launch depends on.",
+    "jobs": ["Sets the cultural default: honest, in-progress, imperfect is celebrated.", "Turns each creator’s community into a ready-made, interest-matched on-ramp that avoids the void."],
+    "tiers": [
+      {"tier": "Marquee", "role": "A few big names for the cultural moment & PR"},
+      {"tier": "Mid-tier", "role": "Broad across niches for category penetration"},
+      {"tier": "Open", "role": "‘Anyone can be a founding member’ so it never feels closed"}
+    ]
+  },
+  "channels": {
+    "Owned": {"emoji": "🏠", "note": "Meta’s own surfaces — the biggest advantage, and the COMPLETE launch set. Note: NO Reels entry point of any kind; that is a later-phase move the roadmap must earn first.", "items": ["Explore feature shelf for Journeys", "Native feed placement + follow-along card", "Highlight → Journey conversion prompt (highest-leverage)", "In-product ‘start your Journey’ takeover moment", "Lifecycle nudges — only within a specific beachhead community"]},
+    "Earned": {"emoji": "📰", "note": "The cultural moment — a story about authenticity and the end of the perfect grid, not a feature announcement.", "items": ["PR around the ‘Day One’ idea & the Founding Journeys cohort", "Creator-led organic reach as the cohort invites their communities", "Completed-Journey recaps as inherently shareable earned media"]},
+    "Paid": {"emoji": "🎯", "note": "Tightly targeted — not a broad awareness buy.", "items": ["Targeted to beachhead interest communities", "Targeted to high-intent signals (repeat category-Reels watchers)", "Retargeting completed-Journey recaps as proof-driven recruitment"]}
+  },
+  "sequence": [
+    {"phase": "Pre-launch · Phase 0", "move": "Seed quietly — recruit & onboard the Founding Journeys cohort; build a body of exemplary content in the closed beta before the public arrives."},
+    {"phase": "Launch · start of Phase 1", "move": "‘Everyone Starts at Day One’ goes live with the cohort’s public Journeys and the Highlight-conversion prompt. Splash concentrated on Wave 1 categories."},
+    {"phase": "Sustain · through Phase 1", "move": "Roll out Wave 2 & Wave 3 creator campaigns category by category; surface the first completed Journeys as proof and as the next wave of creative."},
+    {"phase": "Compounding · Phase 2+", "move": "Completed-Journey recaps become the self-renewing marketing asset; each new surface (WhatsApp, Reels, Facebook, Glasses) gets a category-matched creator push, not a generic relaunch."}
+  ],
+  "measurement": [
+    {"tier": "Awareness", "items": "Campaign reach, brand-lift on the core message, earned-media volume & sentiment.", "kind": "soft"},
+    {"tier": "Activation", "items": "Campaign-attributable Journey starts; Highlight → Journey conversion rate.", "kind": "soft"},
+    {"tier": "Creator efficacy", "items": "Follower → follow-along conversion from creator audiences; share of new Journeys from creator campaigns vs organic discovery.", "kind": "soft"},
+    {"tier": "The honest gate", "items": "Do campaign-sourced Journey-starters hit the north-star (a 3rd update within 30 days, by follower segment)? If acquired users don’t retain, the format isn’t ready to advertise harder — fix the product before spending more on reach.", "kind": "gate"}
+  ],
+  "risks": [
+    {"risk": "Clout drift", "detail": "Over-indexing on ‘go viral’ attracts performers and pushes the culture back toward the polished grid Journeys was meant to escape. Always frame recognition as being seen for showing up — never follower growth."},
+    {"risk": "A hollow recognition promise", "detail": "Don’t promise discovery the product can’t yet deliver for small accounts. Marketing and the discovery engine have to ship in lockstep."},
+    {"risk": "Highlights confusion", "detail": "Never message Journeys as ‘organize your content.’ Lead with progress, guidance, and being seen — the things Highlights structurally cannot do."},
+    {"risk": "Over-polishing", "detail": "A slick ad for ‘post your imperfect beginnings’ is self-defeating; the creative must feel as human as the behavior it asks for."}
+  ]
+}

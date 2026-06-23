@@ -3,12 +3,12 @@ import { Check } from "lucide-react";
 import type { Journey } from "../data/mock";
 import { useApp } from "../state/AppState";
 
-export function JourneyProgressCard({ journey }: { journey: Journey }) {
+export function JourneyProgressCard({ journey }: { journey: Journey; key?: any }) {
   const { isFollowing, toggleFollow } = useApp();
   const following = isFollowing(journey.id);
   return (
     <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white">
-      <Link to="/journey/$id" params={{ id: journey.id }}>
+      <Link to={`/journey/${journey.id}` as any}>
         <img src={journey.cover} alt="" className="aspect-[16/9] w-full object-cover" />
       </Link>
       <div className="p-3">
@@ -33,7 +33,7 @@ export function JourneyProgressCard({ journey }: { journey: Journey }) {
             {following ? "Following" : "Follow"}
           </button>
         </div>
-        <Link to="/journey/$id" params={{ id: journey.id }}>
+        <Link to={`/journey/${journey.id}` as any}>
           <h3 className="text-sm font-semibold text-neutral-900">{journey.title}</h3>
         </Link>
         <p className="mt-0.5 text-xs text-neutral-600">

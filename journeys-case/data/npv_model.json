@@ -1,0 +1,30 @@
+{
+  "_note": "Ported from meta-journeys-npv.xlsx. ILLUSTRATIVE / MODELED — Meta's internal costs are not public and Journeys is hypothetical. NPV is independent of the MAU base (it drives only the adoption-% context).",
+  "wacc": 0.10,
+  "ig_mau_billions": 2.4,
+  "mau_source_url": "https://businesstats.com/instagram-statistics/",
+  "mau_range": "~2.0B–3.0B across public estimates",
+  "years": ["Year 0", "Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6"],
+  "timeline": ["0–12", "12–24", "24–36", "36–48", "48–60", "60–72", "72–84"],
+  "users_m": [5, 25, 60, 100, 140, 170, 190],
+  "arpu": [1, 4, 9, 14, 18, 21, 23],
+  "glasses_mm": [0, 0, 0, 50, 150, 300, 500],
+  "build_cost_mm": [125, 95, 125, 120, 80, 60, 50],
+  "run_rate_mm": [20, 50, 90, 120, 140, 150, 160],
+  "arpu_note": "Incremental NET ARPU per active Journey user. Yr0–1 = better ad targeting; Yr2+ = sponsored labeled recommendations; Yr4+ = commerce, affiliate & premium coaching layered in.",
+  "meta_family_arpp_yr": 63,
+  "phases": [
+    {"phase": "Phase 0", "name": "Seeded Closed Beta", "months": "0–3", "cost_mm": 15, "driver": "Small core eng/design building the MVP; Founding Journeys creator program (incentive is amplification, low cash cost).", "benefit": "Proves the core loop; sets cultural norms before scale. No revenue yet."},
+    {"phase": "Phase 1", "name": "Public Launch (Instagram)", "months": "3–9", "cost_mm": 80, "driver": "Scaling eng + infra to all IG users; the 'Everyone Starts at Day One' campaign; Explore/feed/discovery; creator waves.", "benefit": "Validates loop at scale & cold-start. Organic only — sets up monetization."},
+    {"phase": "Phase 2", "name": "Monetization + WhatsApp", "months": "9–15", "cost_mm": 60, "driver": "Sponsored-recommendation ad-tech build; cross-app WhatsApp integration; continued marketing.", "benefit": "Revenue begins (sponsored, labeled recs). WhatsApp lifts retention — the multiplier."},
+    {"phase": "Phase 3", "name": "Video Journeys in Reels", "months": "15–21", "cost_mm": 30, "driver": "Light eng — a badge + 'view full journey?' button on existing Reels; ongoing run-rate.", "benefit": "Low-risk acquisition on-ramp from the highest-traffic surface."},
+    {"phase": "Phase 4", "name": "AI 'Try This Out?' CTA in Reels", "months": "21–27", "cost_mm": 70, "driver": "AI integration into the crown-jewel Reels feed; heavy testing & guardrail monitoring.", "benefit": "Turns Reels into a proactive acquisition engine — biggest funnel, highest risk."},
+    {"phase": "Phase 5", "name": "Facebook Expansion", "months": "27–36", "cost_mm": 90, "driver": "Genuine re-design for Facebook (Groups, life-events) — not a reskin; FB-specific eng + marketing.", "benefit": "Second native home, esp. for life-documentation journeys; higher-ARPU categories."},
+    {"phase": "Phase 6", "name": "Meta Glasses Coaching", "months": "36+", "cost_mm": 120, "driver": "Hardware integration & on-device AI coaching R&D; long horizon, highest uncertainty.", "benefit": "Closes the flywheel; the ecosystem moat. Opt-in upside layer."}
+  ],
+  "scenarios": [
+    {"name": "Bear", "desc": "slow adoption, weak monetization", "peak_users": 90, "mature_arpu": 10, "npv_mm": 2100, "read": "Still strongly NPV-positive — low downside."},
+    {"name": "Base", "desc": "central estimate", "peak_users": 190, "mature_arpu": 23, "npv_mm": 7573, "read": "Central estimate used in the model."},
+    {"name": "Bull", "desc": "fast adoption, commerce + glasses land", "peak_users": 260, "mature_arpu": 32, "npv_mm": 14500, "read": "Ecosystem flywheel fully realized."}
+  ]
+}

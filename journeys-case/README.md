@@ -11,18 +11,35 @@ what is measured and what is assumed. Every number is tagged:
 - `MODELED` — an assumption, user-adjustable (all Journeys projections)
 - `FLAGGED` — wanted but not publicly disclosed (see `data/SOURCES.md`)
 
-## Tabs
-1. **Overview** — the project + the Journeys product/problem + the data legend
-2. **Launch track record** — what separates Meta's wins from failures (the analytical spine)
-3. **Positioning score** — does Journeys fit that win pattern?
-4. **Behavior patterns** — is there room/unmet need in current user behavior?
-5. **Tailwinds & headwinds** — do macro trends support or undercut it?
-6. **Adoption & revenue model** — interactive, stress-testable sliders
-7. **Long-term strategy** — the ecosystem flywheel (Meta AI → Reels → Facebook → glasses)
-8. **The Case** — consolidated verdict, risk panel, recommendations (updates with the model)
+## Structure
+Five top-level tabs:
 
-Every chart and table has a written **Conclusion**, and every tab ends with an **overarching
-conclusion**.
+1. **📋 Overview** — the project + the Journeys product/problem + the data legend.
+
+2. **📊 Analysis of Product Potential** — *is Journeys a good bet?* (dropdown):
+   - **Launch track record** — what separates Meta's wins from failures (the analytical spine)
+   - **Positioning score** — does Journeys fit that win pattern?
+   - **Behavior patterns** — is there room/unmet need in current user behavior?
+   - **Tailwinds & headwinds** — do macro trends support or undercut it?
+   - **Adoption & revenue model** — interactive, stress-testable sliders
+
+3. **🧭 Product Strategy** — *how it's built, sequenced, and taken to market* (dropdown):
+   - **Long-term strategy** — the ecosystem flywheel (Meta AI → Reels → Facebook → glasses)
+   - **Rollout roadmap** — interactive, metrics-gated 7-phase diagram + marketing track
+   - **Launch marketing** — the "Everyone Starts at Day One" plan, presented interactively
+   - **Meta AI deep-dive** — Meta AI in Journeys vs. as used today (high-intent adoption)
+   - **Highlights & positioning** — the demand Highlights proved, and the archive-vs-arc strategy
+   - **WhatsApp integration** — does the share/notify mechanic help or hinder adoption?
+
+4. **💰 Financial Analysis** — an interactive 7-year discounted cash-flow / NPV model (ported
+   from the NPV workbook): NPV / IRR / benefit-cost, phase cost-benefit, bear/base/bull
+   sensitivity, and a reconciliation against the Adoption & revenue model and Meta's Family ARPP.
+
+5. **✅ The Case** — the capstone: a five-move end-to-end argument synthesizing every tab, a live
+   verdict, risk panel, recommendations, and points to consider.
+
+Every chart and table has a written **Conclusion**, and every section ends with an
+**overarching conclusion**.
 
 ## Run locally
 ```bash

@@ -1,0 +1,178 @@
+{
+  "principle": "Phases advance on metrics, not dates. Every duration is a target; each phase ends in an explicit go / adjust / kill decision against pre-defined gates. A phase whose months have elapsed but whose gate has not cleared iterates or stops — it does not advance.",
+  "north_star": "3rd-update-in-30-days retention, segmented by follower count — the share who start a Journey and post a third update within 30 days, broken out by how many followers they have. The segmentation is the point: a healthy aggregate that hides weak small-account retention is a false positive.",
+  "kill_metric": "If 3rd-update retention is weak across ALL follower segments after a fair test, the core loop is broken and no distribution will save it → kill or fundamentally redesign. Weak retention in only small segments is a fixable discovery problem, not a kill.",
+  "marketing_track": {
+    "summary": "Marketing is a continuous cross-cutting track, not a phase — it begins before launch and runs through every phase, because a new format's norms are set by its earliest content and advocates.",
+    "points": [
+      "Hero campaign: ‘Everyone Starts at Day One’ (CTA: ‘Start your Day One’) — reframes sharing an awkward beginning as brave, not exposing.",
+      "Phase 0: seed the norm via the Founding Journeys creator program (incentive = amplification).",
+      "Phase 1: launch the campaign wave by wave through beachhead communities; owned surfaces only — no Reels entry point.",
+      "Phase 2+: completed-Journey recaps become the self-renewing marketing asset.",
+      "Ongoing: match category-appropriate creators to each new surface (life-event creators lead Facebook; skill creators lead the Reels CTA)."
+    ]
+  },
+  "phases": [
+    {
+      "id": 0,
+      "name": "Seeded Closed Beta",
+      "short": "Closed Beta",
+      "months": [0, 3],
+      "goal": "Prove the core loop in a contained population and deliberately set what a “good Journey” looks like before any scale.",
+      "ship": [
+        "Core Journey creation (AI-inferred theme tag)",
+        "Story-style posts, off the main grid",
+        "Journey page + story-style viewer",
+        "Meta AI behind a ‘need inspiration?’ prompt (organic)",
+        "Pause / archive / complete recap",
+        "Optional reminders (default off)",
+        "Niche discovery ON, broad amplification OFF",
+        "Launch Founding Journeys creator program (incentive = amplification)"
+      ],
+      "measure": [
+        "Activation: % of invited who start a Journey",
+        "★ 3rd-update/30d retention, by follower segment",
+        "AI helpfulness rating (‘was this helpful?’)",
+        "Completion + pause/archive usage"
+      ],
+      "decision": [
+        {"label": "Go", "kind": "go", "text": "Loop retains across segments and AI is helpful → proceed to public launch."},
+        {"label": "Adjust", "kind": "adjust", "text": "Weak only for small accounts (the void problem) → strengthen discovery before scaling; scaling a void wastes traffic."},
+        {"label": "Kill / redesign", "kind": "stop", "text": "Weak across ALL segments → the format itself isn’t compelling."}
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Public Launch on Instagram",
+      "short": "IG Launch",
+      "months": [3, 9],
+      "goal": "Prove the loop generalizes beyond hand-picked communities and validate cold-start mechanics at real scale — does the median user, not the enthusiast, sustain a Journey?",
+      "ship": [
+        "Open Journeys to all Instagram users",
+        "‘Follow along’ — subscribe without following",
+        "First-update invite → updates appear in feeds",
+        "Resurface high-performing Journeys",
+        "Explore ‘Journeys’ tab (niche, interest-matched)",
+        "Optional ‘turn this Highlight into a Journey?’ prompt",
+        "Launch ‘Everyone Starts at Day One’ campaign, wave by wave",
+        "Owned surfaces only — NO Reels entry point yet"
+      ],
+      "measure": [
+        "Creation rate + ★ 3rd-update retention by segment (primary gate)",
+        "Follow-along acceptance rate",
+        "Explore → follow-along rate (is niche discovery beating the void?)",
+        "Highlight → Journey conversion",
+        "Day-30 / day-90 retention; sustained AI helpfulness"
+      ],
+      "decision": [
+        {"label": "Go", "kind": "go", "text": "Small-account retention holds because niche discovery works, and follow-along converts → proceed to monetization."},
+        {"label": "Adjust", "kind": "adjust", "text": "Follow-along converts poorly → simplify or rework the subscribe model before building on it."},
+        {"label": "Hold", "kind": "stop", "text": "Small-account retention still poor despite discovery → hold monetization & scale; the ‘get recognized’ promise is hollow until discovery is fixed."}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Monetization + WhatsApp",
+      "short": "Monetize + WhatsApp",
+      "months": [9, 15],
+      "goal": "Turn on revenue only after the AI has proven useful, and add the highest-leverage cross-app retention mechanic. Trust is the prerequisite for monetization, not a nice-to-have.",
+      "ship": [
+        "Sponsored, clearly-labeled recs in Meta AI (gated on trust data)",
+        "WhatsApp: opt-in ‘share to your group?’ + update pings",
+        "Emphasize life-documentation types (parenting, travel)",
+        "Cautious broad amplification of proven Journeys"
+      ],
+      "measure": [
+        "Sponsored CTR vs standard ads; incremental ARPU",
+        "Guardrail: do sponsored recs dent helpfulness / retention?",
+        "WhatsApp opt-in + its effect on update frequency & retention"
+      ],
+      "decision": [
+        {"label": "Go", "kind": "go", "text": "Sponsored recs convert without denting trust and WhatsApp lifts retention → both bets paid."},
+        {"label": "Adjust", "kind": "adjust", "text": "Sponsored recs tank helpfulness → pull back, re-tune labeling/frequency; protect trust."},
+        {"label": "Deprioritize", "kind": "stop", "text": "WhatsApp doesn’t move retention → it was a high-conviction bet, not a certainty; don’t sink more build into it."}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Soft Acquisition: Video Journeys in Reels",
+      "short": "Reels (passive)",
+      "months": [15, 21],
+      "goal": "Give Journeys a low-risk on-ramp into the firehose without touching the Reels format or algorithm — a gentle test of whether Reels traffic converts before any aggressive change.",
+      "ship": [
+        "Video Journeys viewable in Reels with a ‘view full journey?’ button (format & algorithm untouched)",
+        "Broad algorithmic amplification of proven Journeys begins"
+      ],
+      "measure": [
+        "‘View full journey?’ tap-through + follow-along conversion",
+        "Do viewers who arrive via Reels retain like organic users?",
+        "Guardrail: no degradation of core Reels metrics (watch time, session retention)"
+      ],
+      "decision": [
+        {"label": "Go", "kind": "go", "text": "Reels tap-through converts and Reels metrics hold → proceed to the active AI CTA."},
+        {"label": "Hold", "kind": "stop", "text": "Reels-sourced followers don’t retain → fix targeting before building the higher-risk CTA."}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Active Acquisition: AI ‘Try This Out?’ CTA in Reels",
+      "short": "Reels AI CTA",
+      "months": [21, 27],
+      "goal": "Turn Reels into a proactive acquisition engine — the single highest-risk change in the plan, which is exactly why it ships only after the passive version and everything before it has cleared.",
+      "ship": [
+        "‘Try this out?’ AI CTA on skill-based Reels → Meta AI recommends a start (creators, communities, products) and can spin up a new Journey directly"
+      ],
+      "measure": [
+        "Reels → Journey conversion (tap & start/follow)",
+        "Guardrail (non-negotiable): Reels watch time / session retention must hold",
+        "Do CTA-sourced Journeys retain, or does a proactive prompt import low-intent users?"
+      ],
+      "decision": [
+        {"label": "Go", "kind": "go", "text": "CTA converts and Reels metrics hold → Reels becomes the primary acquisition engine."},
+        {"label": "Re-target", "kind": "adjust", "text": "CTA-sourced Journeys don’t retain → the prompt is too broad; tighten who sees it."},
+        {"label": "Pull it", "kind": "stop", "text": "CTA hurts Reels engagement at all → revert immediately; Reels is too valuable to risk for a feeder feature."}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Platform Expansion: Facebook",
+      "short": "Facebook",
+      "months": [27, 36],
+      "goal": "Extend to the platform that may be more native for life-documentation Journeys — Facebook skews older, is built around life events, and already has Groups, the communities Journeys want to live in.",
+      "ship": [
+        "Journeys on Facebook, redesigned for the surface (not a reskin)",
+        "Integrated with Groups for discovery; framed around life events",
+        "Optional Instagram ↔ Facebook cross-posting"
+      ],
+      "measure": [
+        "Facebook Journey adoption & retention vs Instagram",
+        "Do life-documentation types over-index on Facebook (the core hypothesis)?",
+        "Facebook Group → Journey discovery rate"
+      ],
+      "decision": [
+        {"label": "Go", "kind": "go", "text": "Life-documentation Journeys over-index on Facebook → expand investment; it’s found a second native home."},
+        {"label": "Contain to Instagram", "kind": "stop", "text": "Facebook adoption weak → the format may be Instagram-native; don’t force a port the data doesn’t support."}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Long-Horizon: Meta Glasses Coaching",
+      "short": "Glasses",
+      "months": [36, null],
+      "goal": "Close the flywheel. The same Meta AI that guided you inside a Journey now coaches you in the real world — opt-in, and treated as an enhancement rather than a make-or-break bet.",
+      "ship": [
+        "Opt-in glasses integration: hands-free capture to a Journey",
+        "Real-world coaching tied to Journey state (golf swing, run pacing)",
+        "Closes the loop: capture → Journey holds → graph rewards → AI guides → glasses coach"
+      ],
+      "measure": [
+        "Glasses-Journey opt-in among glasses owners",
+        "Glasses-captured posts per Journey",
+        "Does it lift retention / completion? Coaching satisfaction"
+      ],
+      "decision": [
+        {"label": "Additive enhancement", "kind": "additive", "text": "Exploratory — measured as an additive enhancement, NOT a survival gate. It’s the strategic moat (graph + creators + cross-app surfaces + hardware), but the core product must stand on its own long before this lands."}
+      ]
+    }
+  ]
+}

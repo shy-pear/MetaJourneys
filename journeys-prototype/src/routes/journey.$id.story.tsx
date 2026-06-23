@@ -21,7 +21,7 @@ function StoryViewer() {
     if (!posts.length) return;
     const t = setTimeout(() => {
       if (i < posts.length - 1) setI(i + 1);
-      else navigate({ to: "/journey/$id", params: { id } });
+      else navigate({ to: `/journey/${id}` });
     }, 4500);
     return () => clearTimeout(t);
   }, [i, posts.length, id, navigate]);
@@ -63,7 +63,7 @@ function StoryViewer() {
           onClick={() =>
             i < posts.length - 1
               ? setI(i + 1)
-              : navigate({ to: "/journey/$id", params: { id } })
+              : navigate({ to: `/journey/${id}` })
           }
         />
         {p.type === "video" && p.url ? (

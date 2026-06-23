@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { PhoneFrame } from "../components/PhoneFrame";
 import { TopBar } from "../components/TopBar";
 import { BackButton } from "../components/BackButton";
@@ -33,7 +33,7 @@ function SettingsPage() {
     <PhoneFrame>
       <TopBar title="Journey settings" />
       <div className="flex items-center gap-2 border-b border-neutral-200 bg-white px-3 py-2">
-        <BackButton onClick={() => navigate({ to: "/journey/$id", params: { id } })} />
+        <BackButton onClick={() => navigate({ to: `/journey/${id}` })} />
       </div>
       <main className="flex-1 overflow-y-auto p-4">
         <Field label="Title">
@@ -108,7 +108,7 @@ function SettingsPage() {
           </div>
         </Field>
         <button
-          onClick={() => navigate({ to: "/journey/$id", params: { id } })}
+          onClick={() => navigate({ to: `/journey/${id}` })}
           className="mt-4 w-full rounded-xl bg-neutral-900 py-3 text-sm font-semibold text-white"
         >
           Save changes

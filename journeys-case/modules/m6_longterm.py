@@ -29,25 +29,31 @@ def render():
         return float(d["value"].iloc[0])
 
     # --- The five-stage strategy -------------------------------------------
-    st.subheader("1. The five-stage rollout")
+    st.subheader("1. The surface-expansion flywheel")
     st.markdown(
-        "The strategy introduces Journeys, then progressively wires it into Meta's biggest "
-        "surfaces and its hardware roadmap:")
+        "Viewed as an ecosystem, Journeys is introduced and then progressively wired into Meta's "
+        "biggest surfaces and its hardware roadmap. These five surface-stages map directly onto "
+        "the phased **Rollout roadmap** (note the two distinct Reels moves — passive then active):")
     flow = " &nbsp;→&nbsp; ".join(
         f"<b>{r['stage_order']}. {r['stage']}</b>" for _, r in eco.iterrows())
     st.markdown(
         f"<div style='background:#f3eefb;border:1px solid #8250df;border-radius:8px;"
         f"padding:12px 16px;line-height:2.1;'>{flow}</div>", unsafe_allow_html=True)
     st.markdown(" ")
-    show = eco[["stage_order", "stage", "description", "distribution_surface"]].rename(
-        columns={"stage_order": "#", "distribution_surface": "rides on"})
+    show = eco[["stage_order", "stage", "roadmap_phase", "description",
+                "distribution_surface"]].rename(
+        columns={"stage_order": "#", "roadmap_phase": "roadmap phase",
+                 "distribution_surface": "rides on"})
     st.dataframe(show, width='stretch', hide_index=True)
-    caption_tag("MODELED", "rollout sequencing; surfaces it rides on are real, see chart 2")
+    caption_tag("MODELED", "sequencing mapped to the Rollout roadmap; the surfaces are real")
     conclusion(
         "Each stage is not a new app to bootstrap — it plugs Journeys into a surface Meta "
-        "already owns at scale. The progression deliberately moves from software distribution "
-        "(Meta AI, Reels, Facebook) to hardware (glasses), so earlier stages fund and feed the "
-        "later, capital-intensive ones rather than betting everything on the glasses up front.")
+        "already owns at scale, and each maps to a roadmap phase. The progression deliberately "
+        "moves from software distribution (Meta AI → Reels passive → Reels AI CTA → Facebook) to "
+        "hardware (glasses), so earlier phases fund and feed the later, capital-intensive ones "
+        "rather than betting everything on the glasses up front. The monetization + WhatsApp "
+        "retention layer (Phase 2) sits between launch and the Reels acquisition push — the "
+        "bucket is sealed before the firehose is opened.")
 
     # --- Surface scale (why each stage is credible) ------------------------
     st.subheader("2. Each stage rides a surface that already exists at scale")

@@ -20,7 +20,10 @@ def render():
         "the intent — users leave for Google, YouTube, Reddit and AI assistants to actually "
         "start. Meta owns the attention but not the action. Underneath sits a second problem: "
         "the curated grid has made authentic, in-progress sharing feel too risky, pushing it "
-        "into Stories, DMs and Close Friends.")
+        "into Stories, DMs and Close Friends. People already strain Instagram **Highlights** "
+        "into makeshift journeys — proof of the appetite — but Highlights is a static archive "
+        "they often abandon, so the unmet need is a *better home* for progress, not a request "
+        "for more effort.")
     st.markdown(
         "**Product — Journeys** is a persistent, timeline-based format for documenting something "
         "as it unfolds: a skill (marathon training, learning golf), or an open-ended life "
@@ -58,14 +61,28 @@ def render():
 
     # --- Reading guide ------------------------------------------------------
     st.subheader("How to read this dashboard")
+    st.markdown("Five top-level tabs, moving from *should we build it?* to *how?* to *what's it "
+                "worth?* to the final call. The two analysis tabs use a dropdown to switch "
+                "between sections.")
     st.markdown(
-        "1. **Launch track record** — what separates Meta's wins from its failures (the spine).\n"
-        "2. **Positioning score** — does Journeys fit that win pattern?\n"
-        "3. **Behavior patterns** — is there room/unmet need in current user behavior?\n"
-        "4. **Tailwinds & headwinds** — do macro trends support or undercut it?\n"
-        "5. **Adoption & revenue model** — if it works, how big, and how sensitive?\n"
-        "6. **Long-term strategy** — does Journeys anchor a compounding ecosystem flywheel?\n"
-        "7. **The Case** — consolidated verdict, risks, and recommendations.")
+        "**📋 Overview** — this page: the product, the problem, and how to read the rest.\n\n"
+        "**📊 Analysis of Product Potential** — *is Journeys a good bet?*\n"
+        "- **Launch track record** — what separates Meta's wins from its failures (the spine)\n"
+        "- **Positioning score** — does Journeys fit that win pattern?\n"
+        "- **Behavior patterns** — is there room / unmet need in current user behavior?\n"
+        "- **Tailwinds & headwinds** — do macro trends support or undercut it?\n"
+        "- **Adoption & revenue model** — if it works, how big, and how sensitive? (interactive)\n\n"
+        "**🧭 Product Strategy** — *how it's built, sequenced, and taken to market*\n"
+        "- **Long-term strategy** — does Journeys anchor a compounding ecosystem flywheel?\n"
+        "- **Rollout roadmap** — the metrics-gated, phase-by-phase plan (interactive diagram)\n"
+        "- **Launch marketing** — the 'Everyone Starts at Day One' go-to-market (interactive)\n"
+        "- **Meta AI deep-dive** — the same Meta AI, but invoked at high-intent goal moments\n"
+        "- **Highlights & positioning** — the demand Highlights proved, and the archive-vs-arc strategy\n"
+        "- **WhatsApp integration** — does the share/notify mechanic help or hinder adoption?\n\n"
+        "**💰 Financial Analysis** — the 7-year NPV / DCF model: NPV, IRR, payback, sensitivity, "
+        "and a reconciliation with the adoption model (interactive).\n\n"
+        "**✅ The Case** — the capstone: a five-move argument synthesizing every tab, a live "
+        "verdict, the risk panel, and final recommendations.")
 
     tab_conclusion(
         "Overview",

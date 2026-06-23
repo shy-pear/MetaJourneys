@@ -56,8 +56,9 @@ def render():
     st.plotly_chart(fig2, width='stretch')
     conclusion(
         f"Global social time has flattened and even dipped slightly ({t24:.0f}→{t26:.0f} "
-        "min/day). Growth is no longer free from more scrolling — incremental value must come "
-        "from *new behaviors* (like documenting progress), not more feed consumption.")
+        "min/day), and Instagram's own engagement fell ~26% YoY (7.3%→5.4%). Growth is no longer "
+        "free from more scrolling — incremental value must come from *new behaviors* (like "
+        "documenting progress), not from competing harder for shrinking feed attention.")
 
     # --- US Instagram adoption by age --------------------------------------
     st.subheader("3. Who is on Instagram (US, by age)")

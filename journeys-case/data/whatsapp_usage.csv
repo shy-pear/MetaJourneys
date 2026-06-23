@@ -1,0 +1,10 @@
+metric,value,unit,year,insight,type,source_url
+WhatsApp monthly active users,3300,million,2026,"The largest messaging surface on earth - bigger than any single Meta feed",MEASURED,https://www.demandsage.com/whatsapp-statistics/
+WhatsApp daily active users,2300,million,2026,"~83% of monthly users are daily - a true habit",MEASURED,https://www.demandsage.com/whatsapp-statistics/
+WhatsApp daily-to-monthly ratio,83,percent,2026,"Far stickier than Instagram (~67%); the highest-frequency surface Meta owns",DERIVED,https://www.demandsage.com/whatsapp-statistics/
+Messages sent per day,150,billion,2024,"Enormous existing messaging habit to ride",MEASURED,https://www.infobip.com/blog/whatsapp-statistics
+Share of message volume in group chats,50,percent,2026,"~Half of activity is in groups (41-57.5%) - the relational surface Journeys targets",MEASURED,https://www.infobip.com/blog/whatsapp-statistics
+Average group size,27,members,2026,"Close-tie circles of family and friends, not broadcast audiences",MEASURED,https://www.infobip.com/blog/whatsapp-statistics
+Push notification open rate,98,percent,2026,"A group-chat update ping is near-guaranteed to be seen (email is 17-24%)",MEASURED,https://wanotifier.com/whatsapp-statistics/
+WhatsApp US monthly active users,100,million,2025,"Only ~3% of global users - WhatsApp leverage is far smaller in a US-first launch",MEASURED,https://sinch.com/blog/whatsapp-in-the-us-potential/
+WhatsApp India monthly active users,535,million,2025,"WhatsApp's center of gravity is non-US markets",MEASURED,https://www.demandsage.com/whatsapp-statistics/

@@ -41,16 +41,22 @@ def render():
     caption_tag("MEASURED", "items sourced to reporting/statements; reads tagged DERIVED")
     conclusion(
         "The strongest tailwinds — demand for authenticity, Instagram itself abandoning the "
-        "perfect grid, and the shift to private/close-friends sharing — point directly at the "
-        "format Journeys provides. The strongest headwind is structural: format saturation plus "
-        "the cold-start problem. Notably, 'declining public posting' cuts both ways: it shrinks "
-        "the funnel but is also *the reason* a lower-pressure format is needed.")
+        "perfect grid (now actively **demoting Highlights**, which opens the lane and makes the "
+        "Highlight→Journey on-ramp timely), and the shift to private/close-friends sharing — "
+        "point directly at the format Journeys provides. The sharpest headwind is now a habit "
+        "signal: even low-effort **Highlights are widely abandoned** (set-and-forget), which — "
+        "alongside format saturation and cold-start — says the real risk is sustaining the "
+        "posting habit. Notably, 'declining public posting' cuts both ways: it shrinks the funnel "
+        "but is also *the reason* a lower-pressure format is needed.")
 
     tab_conclusion(
         "Tailwinds & headwinds",
         "On balance the macro environment favors Journeys: the cultural and product-strategy "
-        "winds (authenticity, de-curation, privacy, the AI inspiration-to-action gap) are "
-        "tailwinds the format is purpose-built to ride. The headwinds are real but are mostly "
-        "<i>execution</i> risks — saturation and cold-start — that good interest-matched "
-        "discovery and a default-off, non-nagging design can mitigate, rather than fundamental "
-        "demand risks.")
+        "winds (authenticity, de-curation, privacy, the AI inspiration-to-action gap, and "
+        "Instagram demoting the incumbent Highlights archive) are tailwinds the format is "
+        "purpose-built to ride. Most headwinds are <i>execution</i> risks — saturation and "
+        "cold-start — that interest-matched discovery and a default-off, non-nagging design can "
+        "mitigate. The one genuine demand-side caution is habit decay: the abandonment of "
+        "Highlights is direct in-Meta evidence that a progress-collection habit fades without an "
+        "engine, which is exactly why sustained retention (Module 5) is the make-or-break "
+        "variable rather than reach.")

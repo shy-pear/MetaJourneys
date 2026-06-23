@@ -23,8 +23,6 @@ function NewJourneyPage() {
   const [timeline, setTimeline] = useState("");
   const [reminderText, setReminderText] = useState("");
   const titleInput = useRef<HTMLInputElement>(null);
-  const descInput = useRef<HTMLTextAreaElement>(null);
-  const timelineInput = useRef<HTMLInputElement>(null);
   const coverInput = useRef<HTMLInputElement>(null);
 
   const theme = inferTheme(`${title} ${desc}`);
@@ -33,7 +31,7 @@ function NewJourneyPage() {
   const allCovers = [...userCovers, ...COVER_OPTIONS];
 
   function next() {
-    const nextTitle = titleInput.current?.value.trim() ?? title.trim();
+    const nextTitle = title.trim();
     if (nextTitle.length < 2) {
       titleInput.current?.focus();
       return;
@@ -42,12 +40,10 @@ function NewJourneyPage() {
     const payload = {
       id,
       title: nextTitle,
-      description: descInput.current?.value.trim() || desc.trim() || "A new journey.",
-      theme: inferTheme(
-        `${nextTitle} ${descInput.current?.value.trim() || desc.trim()}`,
-      ),
+      description: desc.trim() || "A new journey.",
+      theme: inferTheme(`${nextTitle} ${desc.trim()}`),
       cover,
-      timeline: timelineInput.current?.value.trim() || timeline.trim(),
+      timeline: timeline.trim(),
     };
     sessionStorage.setItem("draftJourney", JSON.stringify(payload));
     navigate({ to: "/create/journey/first-post" });
@@ -65,9 +61,10 @@ function NewJourneyPage() {
           />
         </div>
 
-        <label className="block">
+        <label htmlFor="journey-create-title" className="block">
           <span className="text-xs font-semibold text-neutral-700">Title</span>
           <input
+            id="journey-create-title"
             ref={titleInput}
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -76,10 +73,10 @@ function NewJourneyPage() {
           />
         </label>
 
-        <label className="mt-3 block">
+        <label htmlFor="journey-create-desc" className="mt-3 block">
           <span className="text-xs font-semibold text-neutral-700">Description</span>
           <textarea
-            ref={descInput}
+            id="journey-create-desc"
             value={desc}
             onChange={(e) => setDesc(e.target.value)}
             placeholder="What is this journey about? How will you know you're done?"
@@ -132,14 +129,14 @@ function NewJourneyPage() {
         </div>
 
         <div className="mt-5">
-          <span className="text-xs font-semibold text-neutral-700">
+          <label htmlFor="journey-create-timeline" className="block text-xs font-semibold text-neutral-700">
             Expected timeline (optional)
-          </span>
+          </label>
           <p className="text-[11px] text-neutral-500">
             e.g. "12 weeks", "by July", "ongoing"
           </p>
           <input
-            ref={timelineInput}
+            id="journey-create-timeline"
             value={timeline}
             onChange={(e) => setTimeline(e.target.value)}
             placeholder="12 weeks"
@@ -148,11 +145,14 @@ function NewJourneyPage() {
         </div>
 
         <div className="mt-5">
-          <span className="text-xs font-semibold text-neutral-700">Reminder schedule</span>
+          <label htmlFor="journey-create-reminder" className="block text-xs font-semibold text-neutral-700">
+            Reminder schedule
+          </label>
           <p className="text-[11px] text-neutral-500">
             Optional. Describe in your own words — e.g. "Mondays at 2pm every week".
           </p>
           <input
+            id="journey-create-reminder"
             value={reminderText}
             onChange={(e) => setReminderText(e.target.value)}
             placeholder="Mondays at 2pm every week"

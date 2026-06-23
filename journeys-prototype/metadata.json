@@ -1,0 +1,6 @@
+{
+  "name": "Glimpse",
+  "description": "Share the journey, not just the highlights. Document your goals publicly over time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

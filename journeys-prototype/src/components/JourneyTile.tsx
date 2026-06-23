@@ -7,11 +7,11 @@ export function JourneyTile({
 }: {
   journey: Journey;
   completed?: boolean;
+  key?: any;
 }) {
   return (
     <Link
-      to="/journey/$id"
-      params={{ id: journey.id }}
+      to={`/journey/${journey.id}` as any}
       className="flex w-20 shrink-0 flex-col items-center gap-1"
     >
       <div

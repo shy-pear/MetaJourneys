@@ -1,0 +1,11 @@
+dimension,meta_ai_today,journeys_ai,advantage,type
+Trigger timing,"Ambient / incidental — summoned from the search bar, comments, or DMs at a random moment","High-intent — invoked the moment a user commits to a goal and at each progress checkpoint",journeys,DERIVED
+Context depth,"Cold, near-contextless one-off prompt","Rich context: the goal, current stage, timeline, and past updates",journeys,DERIVED
+User purpose,"One-off Q&A, image generation, quick search","Achieve a specific multi-week goal",journeys,DERIVED
+Engagement pattern,"Shallow and occasional (~4% daily/monthly active ratio)","Recurring by design — tied to the journey's own posting cadence",journeys,DERIVED
+Commercial intent,"Low and indirect","High — gear, courses, services matched to the user's exact stage",journeys,DERIVED
+Relationship,"Transactional, single-turn","Ongoing coach across the whole journey",journeys,DERIVED
+Structural support,"None — nothing carries the user to the next session","Timeline, opt-in reminders, community, completion summary",journeys,DERIVED
+Underlying technology,"Llama models + Meta-platform signals","Same Llama models + Meta-platform signals",parity,MEASURED
+Distribution,"Embedded in Meta apps, no new app to install","Embedded in Instagram, no new app to install",parity,MEASURED
+Brand & trust,"Meta AI brand; under scrutiny for ad-targeting of private chats","Same brand, but help is aligned to the user's stated goal — reframes AI from surveillance to service",mixed,DERIVED

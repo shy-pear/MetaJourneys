@@ -8,6 +8,13 @@ export type Post = {
   caption: string;
   daysAgo: number;
   likes: number;
+  isStoryStyle?: boolean;
+  storyTextColor?: string;
+  storyBgStyle?: string; // e.g. "gradient-pink" or "amber" etc.
+  sticker?: string; // e.g. "Work in Progress", "Milestone Reached!" etc.
+  mood?: string; // e.g. "🎯 Focused", "🔥 Productive", "💡 Inspired"
+  location?: string; // e.g. "My Garage" or "Home Studio"
+  timeLabel?: string; // e.g. "Just now"
 };
 
 export type Journey = {

@@ -8,7 +8,25 @@ import streamlit as st
 from components.legend import render_legend
 from components.data import load_sources_md
 from modules import (overview, m1_track_record, m2_positioning, m3_behavior,
-                     m4_trends, m5_model, m6_longterm, synthesis)
+                     m4_trends, m5_model, m6_longterm, synthesis, feat_meta_ai,
+                     feat_highlights, feat_roadmap, feat_whatsapp, feat_marketing, feat_npv)
+
+# Dropdown sections for the two analysis tabs.
+ANALYSIS_SECTIONS = {
+    "1 · Launch track record": m1_track_record.render,
+    "2 · Positioning score": m2_positioning.render,
+    "3 · Behavior patterns": m3_behavior.render,
+    "4 · Tailwinds & headwinds": m4_trends.render,
+    "5 · Adoption & revenue model": m5_model.render,
+}
+STRATEGY_SECTIONS = {
+    "1 · Long-term strategy": m6_longterm.render,
+    "2 · Rollout roadmap": feat_roadmap.render,
+    "3 · Launch marketing": feat_marketing.render,
+    "4 · Meta AI deep-dive": feat_meta_ai.render,
+    "5 · Highlights & positioning": feat_highlights.render,
+    "6 · WhatsApp integration": feat_whatsapp.render,
+}
 
 st.set_page_config(page_title="The Journeys Case", page_icon="🧭", layout="wide")
 
@@ -29,31 +47,34 @@ with right:
             st.markdown(load_sources_md())
 
 tabs = st.tabs([
-    "1 · Overview",
-    "2 · Launch track record",
-    "3 · Positioning score",
-    "4 · Behavior patterns",
-    "5 · Tailwinds & headwinds",
-    "6 · Adoption & revenue model",
-    "7 · Long-term strategy",
-    "8 · The Case",
+    "📋 Overview",
+    "📊 Analysis of Product Potential",
+    "🧭 Product Strategy",
+    "💰 Financial Analysis",
+    "✅ The Case",
 ])
 
 with tabs[0]:
     overview.render()
 with tabs[1]:
-    m1_track_record.render()
+    st.markdown("#### Analysis of Product Potential")
+    st.caption("Is Journeys a good bet? Use the dropdown to move between sections; each builds "
+               "on the last.")
+    a_section = st.selectbox("Section", list(ANALYSIS_SECTIONS.keys()),
+                             label_visibility="collapsed", key="analysis_section")
+    st.divider()
+    ANALYSIS_SECTIONS[a_section]()
 with tabs[2]:
-    m2_positioning.render()
+    st.markdown("#### Product Strategy")
+    st.caption("How Journeys is built, sequenced, and taken to market. Use the dropdown to move "
+               "between sections.")
+    s_section = st.selectbox("Section", list(STRATEGY_SECTIONS.keys()),
+                             label_visibility="collapsed", key="strategy_section")
+    st.divider()
+    STRATEGY_SECTIONS[s_section]()
 with tabs[3]:
-    m3_behavior.render()
+    feat_npv.render()
 with tabs[4]:
-    m4_trends.render()
-with tabs[5]:
-    m5_model.render()      # writes st.session_state['model'] before synthesis reads it
-with tabs[6]:
-    m6_longterm.render()
-with tabs[7]:
     synthesis.render()
 
 st.markdown("---")

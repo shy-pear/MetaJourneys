@@ -20,14 +20,16 @@ function AddUpdatePage() {
     <PhoneFrame>
       <TopBar title={j ? `Add to "${j.title}"` : "Add update"} />
       <div className="flex items-center gap-2 border-b border-neutral-200 bg-white px-3 py-2">
-        <BackButton onClick={() => navigate({ to: "/journey/$id", params: { id } })} />
+        <BackButton onClick={() => navigate({ to: `/journey/${id}` })} />
       </div>
       <main className="flex-1 overflow-y-auto">
         <Composer
           ctaLabel="Post update"
+          journeyId={id}
+          initialStage={j?.stage}
           onPost={(post) => {
             addPost(id, post);
-            navigate({ to: "/journey/$id/posted", params: { id } });
+            navigate({ to: `/journey/${id}/posted` });
           }}
         />
       </main>

@@ -3,7 +3,7 @@ import { Check, MoreHorizontal, Sparkles } from "lucide-react";
 import type { Journey, Post } from "../data/mock";
 import { PostActions } from "./PostActions";
 
-export function JourneyPostCard({ journey, post }: { journey: Journey; post: Post }) {
+export function JourneyPostCard({ journey, post }: { journey: Journey; post: Post; key?: any }) {
   return (
     <article className="border-b border-neutral-200 pb-3">
       <header className="flex items-center justify-between px-3 py-2.5">
@@ -54,8 +54,7 @@ export function JourneyPostCard({ journey, post }: { journey: Journey; post: Pos
 
       <div className="px-3 pt-2">
         <Link
-          to="/journey/$id"
-          params={{ id: journey.id }}
+          to={`/journey/${journey.id}` as any}
           className="inline-flex items-center justify-center rounded-lg border border-neutral-300 px-3 py-1.5 text-xs font-semibold text-neutral-900"
         >
           View full journey →

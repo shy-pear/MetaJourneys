@@ -1,0 +1,6 @@
+phase,move,rationale,type
+Phase 1 — Launch,"Ship Journeys as its own clean, standalone feature — not a merge with Highlights","Teach the new concept without reworking an entrenched, well-understood behavior; avoid day-one confusion",MODELED
+Phase 1 — Entry,"Start a Journey by dumping in existing posts (it behaves like a Highlight), then let AI optionally expand it into a structured arc","Matches Highlights' low-friction entry and removes blank-page friction",MODELED
+Phase 2 — Contrast,"Keep both side by side; a Story post can go to a Highlight, a Journey, or both","The contrast teaches itself — a Highlight is where I file something; a Journey is where I'm building toward something",MODELED
+Phase 2 — On-ramp,"Optional 'turn this Highlight into a Journey?' prompt","Harvests the installed Highlights base for cold-start without forcing a confusing merge",MODELED
+Phase 3 — Graduation,"Fold Highlights into Journeys once 'Journey' is a concept people already grasp","A natural graduation rather than a confusing mutation on day one",MODELED
