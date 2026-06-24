@@ -9,7 +9,8 @@ from components.legend import render_legend
 from components.data import load_sources_md
 from modules import (overview, m1_track_record, m2_positioning, m3_behavior,
                      m4_trends, m5_model, m6_longterm, synthesis, feat_meta_ai,
-                     feat_highlights, feat_roadmap, feat_whatsapp, feat_marketing, feat_npv)
+                     feat_highlights, feat_roadmap, feat_whatsapp, feat_marketing, feat_npv,
+                     feat_prototype)
 
 # Dropdown sections for the two analysis tabs.
 ANALYSIS_SECTIONS = {
@@ -50,6 +51,7 @@ tabs = st.tabs([
     "📋 Overview",
     "📊 Analysis of Product Potential",
     "🧭 Product Strategy",
+    "📱 Prototype",
     "💰 Financial Analysis",
     "✅ The Case",
 ])
@@ -73,8 +75,10 @@ with tabs[2]:
     st.divider()
     STRATEGY_SECTIONS[s_section]()
 with tabs[3]:
-    feat_npv.render()
+    feat_prototype.render()
 with tabs[4]:
+    feat_npv.render()
+with tabs[5]:
     synthesis.render()
 
 st.markdown("---")

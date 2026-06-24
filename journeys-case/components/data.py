@@ -71,3 +71,13 @@ def _read_bytes(path: str, mtime: float) -> bytes:
 def load_bytes(name: str) -> bytes:
     p = DATA / name
     return _read_bytes(str(p), _mtime(p))
+
+
+@st.cache_data
+def _read_utf8(path: str, mtime: float) -> str:
+    return Path(path).read_text(encoding="utf-8")
+
+
+def load_text(name: str) -> str:
+    p = DATA / name
+    return _read_utf8(str(p), _mtime(p))

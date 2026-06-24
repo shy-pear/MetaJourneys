@@ -31,11 +31,17 @@ Five top-level tabs:
    - **Highlights & positioning** — the demand Highlights proved, and the archive-vs-arc strategy
    - **WhatsApp integration** — does the share/notify mechanic help or hinder adoption?
 
-4. **💰 Financial Analysis** — an interactive 7-year discounted cash-flow / NPV model (ported
+4. **📱 Prototype** — a rough, clickable Phase-1 prototype of Journeys on Instagram (a
+   React/Vite app built to a single self-contained HTML file and embedded live). Demonstrates
+   the core loop and how Meta AI integrates into Reels (the ✨ "try this out?" entry point).
+   Source lives in `../journeys-prototype`; rebuild with `npm run build` and copy
+   `dist/index.html` → `journeys-case/data/prototype.html`.
+
+5. **💰 Financial Analysis** — an interactive 7-year discounted cash-flow / NPV model (ported
    from the NPV workbook): NPV / IRR / benefit-cost, phase cost-benefit, bear/base/bull
    sensitivity, and a reconciliation against the Adoption & revenue model and Meta's Family ARPP.
 
-5. **✅ The Case** — the capstone: a five-move end-to-end argument synthesizing every tab, a live
+6. **✅ The Case** — the capstone: a five-move end-to-end argument synthesizing every tab, a live
    verdict, risk panel, recommendations, and points to consider.
 
 Every chart and table has a written **Conclusion**, and every section ends with an

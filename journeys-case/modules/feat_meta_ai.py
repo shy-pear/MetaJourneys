@@ -18,6 +18,16 @@ def render():
     st.caption("Same assistant, different moment. This tab asks what changes when Meta's "
                "existing AI is invoked at high-intent goal moments instead of ambiently.")
 
+    st.info(
+        "**Meta AI's role in Journeys** — it is the *guidance layer* that helps a user actually "
+        "reach the goal they're documenting. At the moments that matter (starting a Journey, and "
+        "at each progress checkpoint) it answers *'what's my next step?'* — surfacing the "
+        "creators, communities, and products suited to the user's specific stage, and it can spin "
+        "up a Journey straight from a Reel. It starts purely organic (earning trust and "
+        "generating high-intent signals) and only later layers in clearly-labeled sponsored "
+        "recommendations. In short: Journeys is the place you document progress; Meta AI is the "
+        "coach that helps you make it.")
+
     cmp = load_csv("meta_ai_comparison.csv")
     ev = load_csv("intent_evidence.csv")
 

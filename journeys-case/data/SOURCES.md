@@ -67,6 +67,13 @@ user-provided access.
 3. **Public-discussion sentiment/volume** around adjacent features (Close Friends, BeReal,
    Notes) — a stretch goal. Requires X/Reddit API access. Out of scope this pass.
 
+## Prototype
+- `data/prototype.html` is a rough, clickable Phase-1 prototype of Journeys on Instagram,
+  embedded in the **Prototype** tab. It is a React + TanStack Router (Vite) app — source in
+  `../journeys-prototype` — built to a single self-contained HTML file (`vite-plugin-singlefile`,
+  hash-history routing so it works inside the embed). All in-app content is mock/illustrative;
+  the Meta AI panel uses hardcoded suggestions (no live API). Images/video load from the web.
+
 ## Modeled assumptions
 - `config/assumptions.yaml` holds all Module 5 sliders and the Journeys scorecard. Every value
   there is MODELED and user-adjustable in the app.
